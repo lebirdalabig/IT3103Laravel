@@ -11,6 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', 'PagesController@index');
+
+Route::get('/profile', 'PagesController@profile');
+
+Route::get('/dashboard', 'PagesController@dashboard');
+
+Route::get('/register', 'PagesController@register');
+
+Route::get('/header', 'PagesController@header');
+
+// Route::get('/profile', function () {
+//     return view('profile');
+// });
+
+// Route::get('/profile/{id}/{name}', function ($id, $name) {
+//     return 'User number '.$id.' Name: '.$name;
+// });
