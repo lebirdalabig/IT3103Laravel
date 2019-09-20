@@ -1,6 +1,15 @@
 @extends('layouts.header')
 
 @section('content')
-	<h1>{{$title}}</h1>
-	<p>This is an example</p>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Homepage</div>
+
+                Homepages
+            </div>
+        </div>
+    </div>
+</div>
 @endsection
